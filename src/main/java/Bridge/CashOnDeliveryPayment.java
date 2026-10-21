@@ -8,6 +8,7 @@ public class CashOnDeliveryPayment extends PaymentNotification{
 
     @Override
     public void sendNotification() {
-        channel.send("Cash On Delivery Payment Success");
+        String message = "Cash On Delivery Payment Success";
+        channel.send(message);
     }
 }

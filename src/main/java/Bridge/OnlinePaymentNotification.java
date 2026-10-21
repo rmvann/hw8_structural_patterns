@@ -8,6 +8,7 @@ public class OnlinePaymentNotification extends PaymentNotification {
 
     @Override
     public void sendNotification() {
-        channel.send("Online Payment Success");
+        String message = "Online Payment Success";
+        channel.send(message);
     }
 }

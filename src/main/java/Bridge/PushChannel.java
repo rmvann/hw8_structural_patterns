@@ -4,6 +4,7 @@ public class PushChannel implements Channel {
 
     @Override
     public void send(String message) {
-        System.out.println(message + " - sent via push notification");
+        String notif = message + " - sent via push notification";
+        System.out.println(notif);
     }
 }
