@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-class PaymentTest {
+public class PaymentTest {
     private String captureOutput(Runnable action) {
         PrintStream originalOut = System.out;
         ByteArrayOutputStream output =
