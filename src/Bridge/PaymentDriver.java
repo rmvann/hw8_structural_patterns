@@ -18,8 +18,16 @@ public class PaymentDriver {
         cashSms.sendNotification();
 
         // part 2
-        
+        PaymentNotification bitcoinEmail = new BitcoinPayment(new EmailChannel());
+        bitcoinEmail.sendNotification();
+        PaymentNotification bitcoinSms = new BitcoinPayment(new SmsChannel());
+        bitcoinSms.sendNotification();
 
         // part 3
+        PaymentNotification onlinePush = new OnlinePaymentNotification(new PushChannel());
+        onlinePush.sendNotification();
+
+        PaymentNotification bitcoinPush = new BitcoinPayment(new PushChannel());
+        bitcoinPush.sendNotification();
     }
 }
